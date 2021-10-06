@@ -382,7 +382,7 @@ class ngentod:
 
     def api(self, user, xxh):
         global ok,cp,loop
-        sys.stdout.write('\r%s%s%s [crack] %s/%s [OK-:%s]-[CP-:%s] '%(U,til,O,loop,len(self.id),len(ok),len(cp))),
+        print('\r%s%s%s [crack] %s/%s [OK-:%s]-[CP-:%s] '%(U,til,O,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
         for pw in xxh:
             pw = pw.lower()
@@ -434,7 +434,7 @@ class ngentod:
 
     def mbasic(self, user, xxh):
         global ok,cp,loop
-        sys.stdout.write('\r%s%s%s [crack] %s/%s [OK-:%s]-[CP-:%s] '%(U,til,O,loop,len(self.id),len(ok),len(cp))),
+        print('\r%s%s%s [crack] %s/%s [OK-:%s]-[CP-:%s] '%(U,til,O,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
         for pw in xxh:
             pw = pw.lower()
@@ -482,7 +482,7 @@ class ngentod:
 
     def mobile(self, user, xxh):
         global ok,cp,loop
-        sys.stdout.write('\r%s%s%s [crack] %s/%s [OK-:%s]-[CP-:%s] '%(U,til,O,loop,len(self.id),len(ok),len(cp))),
+        print('\r%s%s%s [crack] %s/%s [OK-:%s]-[CP-:%s] '%(U,til,O,loop,len(self.id),len(ok),len(cp))),
         sys.stdout.flush()
         for pw in xxh:
             pw = pw.lower()
