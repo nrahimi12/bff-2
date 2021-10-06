@@ -74,9 +74,9 @@ def masuk():
     print ('\n%s%s%s 01 %sLogin via token \n%s%s%s 02%s Cara mendapatkan token \n%s%s%s 00 %sKeluar'%(U,til,K,O,U,til,K,O,U,til,M,O))
     kontol = raw_input ("\n%s# %sPilih %s> %s"%(P,O,M,K))
     if kontol in(""):
-        jalan("\n%s!%s Wajib gunakan akun tumbal dilarang akun utama"%(M,O))
     	print("%s%s wrong input "%(M,til));exit()
     elif kontol in ('1','01'):
+        jalan("\n%s!%s Wajib gunakan akun tumbal dilarang akun utama"%(M,O))
     	romz = raw_input("\n%s# %sToken %s> %s"%(P,O,M,K))
         if romz in(""):
         	print ("%s%s isi token kentod "%(M,til))
