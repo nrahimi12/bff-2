@@ -77,7 +77,7 @@ def masuk():
     	print("%s%s wrong input "%(M,til));exit()
     elif kontol in ('1','01'):
         jalan("\n%s!%s Wajib gunakan akun tumbal dilarang akun utama"%(M,O))
-    	romz = raw_input("\n%s# %sToken %s> %s"%(P,O,M,K))
+    	romz = raw_input("%s# %sToken %s> %s"%(P,O,M,K))
         if romz in(""):
         	print ("%s%s isi token kentod "%(M,til))
     	try:
