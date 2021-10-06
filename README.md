@@ -34,9 +34,6 @@ $ python2 bff-2.py<br>
 #
 #### Want to recode? Permit first. Appreciate the maker bro!
 #
-<img src="https://github.com/Mark-Zuck/bff-2/blob/main/rom/20210426_092630.jpg" width="640" title="Menu" alt="Menu">
-
-#
 If you can't use this script or there is a bug in the script, please contact me
 #### contact me
 [![](https://img.shields.io/badge/Facebook-blue?logo=Facebook&logoColor=blue&labelColor=white)](https://www.facebook.com/100002461344178)
