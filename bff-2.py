@@ -195,7 +195,7 @@ def publik(romz,headers=header):
             sys.stdout.flush();jeda(0.0050)
 
         ys.close()
-        print ('\n\n%s%s Succes dump id dari %s'%(H,til,nm['first_name']))
+        print ('\n\n%s%s Succes dump id dari %s'%(H,til,nm['name']))
         print ('%s%s%s File dump tersimpan %s>%s %s '%(U,til,O,M,H,qq))
         raw_input('\n%s%s%s Kembali '%(U,til,O))
         menu()
