@@ -1,11 +1,4 @@
-## Hello word👋
-##### Update 06 Oktober 2021
-#
-#### Donasi Dana :
-##### +6282371648186
-````
-Coded by : Romi Afrizal
-````
+##### Update 08 Oktober 2021
 ## Installation
 $ pkg update && pkg upgrade <br>
 $ pkg install python2 <br>
@@ -29,10 +22,8 @@ $ python2 bff-2.py<br>
 • 00 Keluar<br>
 #### Methode crack :
 • 1 Methode api (fast crack) <br>
-• 2 Methode free (slow crack)<br>
+• 2 Methode mbasic (slow crack)<br>
 • 3 Methode mobile (very slow crack) <br>
-#
-#### Want to recode? Permit first. Appreciate the maker bro!
 #
 If you can't use this script or there is a bug in the script, please contact me
 #### contact me
@@ -40,8 +31,9 @@ If you can't use this script or there is a bug in the script, please contact me
 [![](https://img.shields.io/badge/Whatsapp-CHAT-red?logo=Whatsapp&logoColor=Brightgreen&labelColor=white)](https://wa.me/6282371648186?text=Asalamualaikum+bang)
 #### Join groups facebook
 [![](https://img.shields.io/badge/Groups-blue?logo=Facebook&logoColor=blue&labelColor=white)](https://www.facebook.com/310605552656196)
+#### Donasi Dana :
++6282371648186
 #
-
 <details open> 
 <summary> PASSWORD LIST </summary>
 
