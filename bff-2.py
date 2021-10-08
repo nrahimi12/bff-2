@@ -173,6 +173,7 @@ def cvd(cookies): # convert cookie dict to string
 		return result
 
 # PUBLIK
+id = []
 def publik(romz,headers=header):
     try:
         os.mkdir('dump')
@@ -180,12 +181,13 @@ def publik(romz,headers=header):
     try:
     	print ("\n%s%s %sKetik '%sme%s' jika ingin dump daftar teman sendiri "%(U,til,O,H,O))
         idt = raw_input('%s%s %sTarget id%s > %s'%(U,til,O,M,K))
-        simpan = raw_input('%s%s%s Nama file%s > %s'%(U,til,O,M,K))
-        r = requests.get('https://graph.facebook.com/%s?fields=friends.limit(5001)&access_token=%s'%(idt,romz))
-        id = []
-        z = json.loads(r.text)
-        qq = ('dump/' + simpan + '.json').replace(' ', '_')
+        #simpan = raw_input('%s%s%s Nama file%s > %s'%(U,til,O,M,K))
+        gas = requests.get('https://graph.facebook.com/%s?access_token=%s'%(idt,romz))
+        nm = json.loads(gas.text)
+        qq = ('dump/'+nm['first_name']+'.json').replace(' ', '_')
         ys = open(qq, 'w')
+        r = requests.get('https://graph.facebook.com/%s?fields=friends.limit(5001)&access_token=%s'%(idt,romz))
+        z = json.loads(r.text)
         for a in z['friends']['data']:
             id.append(a['id'] + '<=>' + a['name'])
             ys.write(a['id'] + '<=>' + a['name'] + '\n')
@@ -193,7 +195,7 @@ def publik(romz,headers=header):
             sys.stdout.flush();jeda(0.0050)
 
         ys.close()
-        print ('\n\n%s%s Succes dump id publik '%(H,til))
+        print ('\n\n%s%s Succes dump id dari %s'%(H,til,nm['first_name']))
         print ('%s%s%s File dump tersimpan %s>%s %s '%(U,til,O,M,H,qq))
         raw_input('\n%s%s%s Kembali '%(U,til,O))
         menu()
@@ -201,6 +203,7 @@ def publik(romz,headers=header):
         exit('\n%s%s Failed dump id'%(M,til))
        
 # FOLLOWERS
+id = []
 def followers(romz,headers=header):
     try:
         os.mkdir('dump')
@@ -209,12 +212,13 @@ def followers(romz,headers=header):
     	print ("\n%s%s %sKetik '%sme%s' jika ingin dump followers sendiri "%(U,til,O,H,O))
         idt = raw_input('%s%s %sTarget id%s  > %s'%(U,til,O,M,K))
         batas = raw_input('%s%s %sMaximal id%s > %s'%(U,til,O,M,K))
-        simpan = raw_input('%s%s%s Nama file%s  > %s'%(U,til,O,M,K))
-        r = requests.get('https://graph.facebook.com/%s/subscribers?limit=%s&access_token=%s'%(idt,batas,romz))
-        id = []
-        z = json.loads(r.text)
-        qq = ('dump/' + simpan + '.json').replace(' ', '_')
+        #simpan = raw_input('%s%s%s Nama file%s  > %s'%(U,til,O,M,K))
+        gas = requests.get('https://graph.facebook.com/%s?access_token=%s'%(idt,romz))
+        nm = json.loads(gas.text)
+        qq = ('dump/'+nm['first_name']+'.json').replace(' ', '_')
         ys = open(qq, 'w')
+        r = requests.get('https://graph.facebook.com/%s/subscribers?limit=%s&access_token=%s'%(idt,batas,romz))
+        z = json.loads(r.text)
         for a in z['data']:
             id.append(a['id'] + '<=>' + a['name'])
             ys.write(a['id'] + '<=>' + a['name'] + '\n')
@@ -222,7 +226,7 @@ def followers(romz,headers=header):
             sys.stdout.flush();jeda(0.0050)
 
         ys.close()
-        print ('\n\n%s%s Succes dump id followers '%(H,til))
+        print ('\n\n%s%s Succes dump followers dari %s '%(H,til,nm["name"]))
         print ('%s%s%s File dump tersimpan %s>%s %s '%(U,til,O,M,H,qq))
         raw_input('\n%s%s%s Kembali '%(U,til,O))
         menu()
